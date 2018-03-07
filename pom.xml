@@ -169,7 +169,7 @@
     <distributionManagement>
         <snapshotRepository>
             <id>N3_repo</id>
-            <url>http://localhost:8081/repository/maven-releases/ryan</url>
+            <url>http://localhost:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
         <repository>
             <id>N3_repo</id>
