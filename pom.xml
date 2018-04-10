@@ -8,7 +8,7 @@
     <groupId>org.owasp.webgoat</groupId>
     <artifactId>webgoat-parent</artifactId>
     <packaging>pom</packaging>
-    <version>7.0.2</version>
+    <version>7.0.1</version>
 
     <name>WebGoat Parent Pom</name>
     <description>Parent Pom for the WebGoat Project. A deliberately insecure Web Application</description>
@@ -176,7 +176,7 @@
         </snapshotRepository>
         <repository>
             <id>N3_repo</id>
-            <url>http://localhost:8081/repository/maven-releases/</url>
+            <url>http://localhost:8081/repository/Staging-Dev/</url>
         </repository>
     </distributionManagement>
 
