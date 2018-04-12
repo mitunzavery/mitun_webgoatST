@@ -177,7 +177,7 @@
         </snapshotRepository>
         <repository>
             <id>N3_repo</id>
-            <url>http://localhost:8081/repository/Staging-Dev/</url>
+            <url>http://localhost:8081/repository/maven-releases/</url>
         </repository>
     </distributionManagement>
 
