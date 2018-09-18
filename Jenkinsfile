@@ -9,6 +9,7 @@ pipeline {
 
         sh '''
                     env
+                    whoami
                     echo "PATH = ${PATH}"
                     echo "M2_HOME = ${M2_HOME}"
                     echo "Build Number = ${BUILD_ID}"
