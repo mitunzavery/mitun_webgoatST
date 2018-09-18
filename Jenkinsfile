@@ -39,7 +39,7 @@ pipeline {
 
             sh '''cd webgoat-container
             
-                  docker build -t webgoat/webgoat-8.0-${BUILD_ID} .
+                  /usr/local/bin/docker build -t webgoat/webgoat-8.0-${BUILD_ID} .
                     '''
           }
         }
@@ -59,7 +59,7 @@ pipeline {
           steps {
             //input 'Scan with IQ at Stage-Release?'
 
-            sh 'docker save webgoat/webgoat-8.0-${BUILD_ID} -o $WORKSPACE/webgoat.tar'
+            sh '/usr/local/bin/docker save webgoat/webgoat-8.0-${BUILD_ID} -o $WORKSPACE/webgoat.tar'
             nexusPolicyEvaluation(iqStage: 'stage-release', iqApplication: 'webgoat')
           }
         }
@@ -73,8 +73,8 @@ pipeline {
         //input 'Push to Nexus Repo?'
 
         sh '''
-                    docker tag webgoat/webgoat-8.0-${BUILD_ID} localhost:18443/webgoat/webgoat-8.0-${BUILD_ID}:8.0-${BUILD_ID}
-                    docker push localhost:18443/webgoat/webgoat-8.0-${BUILD_ID}
+                    /usr/local/bin/docker tag webgoat/webgoat-8.0-${BUILD_ID} localhost:18443/webgoat/webgoat-8.0-${BUILD_ID}:8.0-${BUILD_ID}
+                    /usr/local/bin/docker push localhost:18443/webgoat/webgoat-8.0-${BUILD_ID}
                 '''
       }
     }
