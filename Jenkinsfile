@@ -36,7 +36,7 @@ pipeline {
     
             //input 'Build with docker?'
 
-            sh '''cd webgoat-server
+            sh '''cd webgoat-container
                   docker build -t webgoat/webgoat-8.0-${BUILD_ID} .
                     '''
           }
