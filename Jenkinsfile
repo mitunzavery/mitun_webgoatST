@@ -1,6 +1,15 @@
 pipeline {
   agent any
   stages {
+    stage('Prep') { // for display purposes
+      dockerHome = tool 'localdocker'
+      sh 'echo $PATH'
+      env.PATH = "${dockerHome}:${env.PATH}:/usr/local/bin"
+      echo "${env.PATH}"
+      sh 'echo $JENKINS_HOME'
+      sh 'echo $PATH'
+    }    
+    
     stage('Build') {
       steps {
         echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
@@ -37,6 +46,7 @@ pipeline {
             //input 'Build with docker?'
 
             sh '''cd webgoat-container
+            
                   docker build -t webgoat/webgoat-8.0-${BUILD_ID} .
                     '''
           }
