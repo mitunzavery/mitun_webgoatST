@@ -99,6 +99,6 @@ pipeline {
   }
   tools {
     maven 'localmaven'
-    docker 'localdocker'
+    org.jenkinsci.plugins.docker.commons.tools.DockerTool 'localdocker'
   }
 }
