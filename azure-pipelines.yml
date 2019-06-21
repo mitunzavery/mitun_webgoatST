@@ -20,3 +20,13 @@ steps:
     publishJUnitResults: false
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+
+- task: Nexus IQ for Azure DevOps@0
+  inputs:
+    serverUrl: 'http://36d6ed0a.ngrok.io'
+    serverUsername: 'admin'
+    serverPassword: 'admin123'
+    applicationId: 'webgoat'
+    scanDirectory: '%SYSTEM_DEFAULTWORKINGDIRECTORY%'
+    stage: 'build'
+    scanTargets: '**\*.nupkg,**\*.js'
