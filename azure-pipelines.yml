@@ -26,7 +26,7 @@ steps:
     serverUrl: 'http://36d6ed0a.ngrok.io'
     serverUsername: 'admin'
     serverPassword: 'admin123'
-    applicationId: 'webgoat'
+    applicationId: 'WebGoat'
     scanDirectory: '%SYSTEM_DEFAULTWORKINGDIRECTORY%'
     stage: 'build'
     scanTargets: '**\*.nupkg,**\*.js'
