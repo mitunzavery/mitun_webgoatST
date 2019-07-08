@@ -256,6 +256,11 @@
             <version>${commons-collections.version}</version>
         </dependency>
         <dependency>
+            <groupId>commons-httpclient</groupId>
+            <artifactId>commons-httpclient</artifactId>
+            <version>${commons-httpclient.version}</version>
+        </dependency>
+        <dependency>
             <groupId>commons-digester</groupId>
             <artifactId>commons-digester</artifactId>
             <version>${commons-digester.version}</version>
@@ -296,6 +301,11 @@
             <artifactId>wsdl4j</artifactId>
             <version>${wsdl4j.version}</version>
         </dependency>
+        <dependency>
+        	<groupId>org.apache.tapestry</groupId>
+  			<artifactId>tapestry-core</artifactId>
+  			<version>${tapestry-core.version}</version>
+		</dependency>
         <dependency>
             <groupId>java2html</groupId>
             <artifactId>j2h</artifactId>
