@@ -13,7 +13,7 @@
     <version>7.0.1</version>
 
     <name>WebGoat Parent Pom</name>
-    <description>Parent Pom for the WebGoat Project. A deliberately insecure Web Application</description>
+    <description>Parent Pom for the WebGoat Project. A deliberately insecure Web Application Project</description>
     <inceptionYear>2006</inceptionYear>
     <url>https://github.com/WebGoat/WebGoat</url>
 
