@@ -23,10 +23,10 @@ steps:
 
 - task: Nexus IQ for Azure DevOps@0
   inputs:
-    serverUrl: 'http://36d6ed0a.ngrok.io'
+    serverUrl: 'http://9f945e20.ngrok.io'
     serverUsername: 'admin'
     serverPassword: 'admin123'
     applicationId: 'WebGoat'
     scanDirectory: '%SYSTEM_DEFAULTWORKINGDIRECTORY%'
     stage: 'build'
-    scanTargets: '**\*.nupkg,**\*.js'
+    scanTargets: '**\*.nupkg,**\*.js,**\*.jar,**\*.*'
