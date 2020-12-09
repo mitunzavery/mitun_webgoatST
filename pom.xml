@@ -1,11 +1,6 @@
 <?xml version="1.0"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-<!-- Adding comment for GitHub Commit -->
-<!-- Adding comment for Demo Commit -->
-<!-- Adding comment for Demo Commit 1-->
-<!-- Adding comment for Demo Commit 2-->
-
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.owasp.webgoat</groupId>
     <artifactId>webgoat-parent</artifactId>
@@ -13,7 +8,7 @@
     <version>7.0.1</version>
 
     <name>WebGoat Parent Pom</name>
-    <description>Parent Pom for the WebGoat Project. A deliberately insecure Web Application Projects for Testing Testing...</description>
+    <description>Parent Pom for the WebGoat Project. A deliberately insecure Web Application</description>
     <inceptionYear>2006</inceptionYear>
     <url>https://github.com/WebGoat/WebGoat</url>
 
@@ -121,7 +116,6 @@
         <build-helper-maven-plugin.version>1.9.1</build-helper-maven-plugin.version>
         <cobertura-maven-plugin.version>2.7</cobertura-maven-plugin.version>
         <commons-collections.version>3.2.1</commons-collections.version>
-        <commons-httpclient.version>3.1</commons-httpclient.version>
         <commons-digester.version>2.1</commons-digester.version>
         <commons-discovery.version>0.5</commons-discovery.version>
         <commons-fileupload.version>1.3.1</commons-fileupload.version>
@@ -166,7 +160,7 @@
         <tomcat7-maven-plugin.version>2.2</tomcat7-maven-plugin.version>
         <versioneye-maven-plugin.version>3.5.1</versioneye-maven-plugin.version>
         <wsdl4j.version>1.6.3</wsdl4j.version>
-        <tapestry-core.version>5.1.0.5</tapestry-core.version>
+        <logback-classic.version>1.0.3</logback-classic.version>
     </properties>
 
     <modules>
@@ -176,7 +170,7 @@
     <distributionManagement>
         <snapshotRepository>
             <id>N3_repo</id>
-            <url>http://localhost:8081/repository/maven-snapshots/</url>
+            <url>http://localhost:8081/repository/maven-releases/ryan</url>
         </snapshotRepository>
         <repository>
             <id>N3_repo</id>
@@ -306,18 +300,6 @@
                     <projectId>562da95be346d7000e0369ac</projectId>
                 </configuration>
             </plugin>
-            <plugin>
-       			<groupId>com.sonatype.clm</groupId>
-     		   	<artifactId>clm-maven-plugin</artifactId>
-    		    <version>2.7.0-01</version>
-   		     	<configuration>
-   		       		<serverUrl>http://localhost:8070</serverUrl>
-   		       		<username>admin</username>
-       				<password>admin123</password>
-     		     	<applicationId>sandbox-application</applicationId>
-   		       		<stage>develop</stage>
-       		 	</configuration>
-     		</plugin> 
         </plugins>
     </build>
 
